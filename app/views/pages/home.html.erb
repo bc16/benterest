@@ -1,8 +1,19 @@
 <div class="jumbotron center">
 	<h1>Benterest!</h1>
 	<p>Home of Kind King Benwenceslas!</p>
+	
+	<% if user_signed_in? %>
+	<%# DO SOMETHING %>
+	<p>Hello, thanks for signing in!</p>
+
+
+	<% else %>
 	<p>
-		<%= link_to "Log in","#", class: "btn btn-warning btn-lg" %>
-		<%= link_to "Sign Up","#", class: "btn btn-primary btn-lg" %>
+		<%= link_to "Log in", new_user_session_path, class: "btn btn-warning btn-lg" %>
+		<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
 	</p>
+
+	<% end %>
+
+
 </div>
