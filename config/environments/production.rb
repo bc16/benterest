@@ -80,6 +80,6 @@ Benterest::Application.configure do
 
   # For use with Heroku
   # Note to set to actual host name
-  config.action_mailer.default_url_options = { :host => 'kind-king-benwenceslas.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'http://kind-king-benwenceslas.herokuapp.com/' }
 
 end
